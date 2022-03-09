@@ -2,7 +2,7 @@
 {
     internal partial class Program
     {
-        public class Combustivel
+        public class Veiculo
         {
             public double kmInicial;
             public double kmFinal;
@@ -10,9 +10,9 @@
 
             public double Calcula_Consumo_Combustivel()
             {
-                double distancia = kmFinal - kmInicial;
+                double distanciaPercorrida = kmFinal - kmInicial;
 
-                double gastoCombustivel = distancia / consumo;
+                double gastoCombustivel = distanciaPercorrida / consumo;
 
                 return gastoCombustivel;
             }
